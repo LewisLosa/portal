@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/logo.svg">
+  <title>losa.dev | Portal</title>
+</head>
+
+<body>
+  <div id="app">
+    <header class="header">
+      <a href="https://portal.losa.dev" class="logo" data-cursor="hover">
+        <img class="logo" src="/logo.png">
+      </a>
+      <button class="theme desktop" id="toggleTheme" data-cursor="hover">
+        <svg class="theme-svg" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M8 16C6.89333 16 5.85333 15.79 4.88 15.37C3.90667 14.95 3.06 14.38 2.34 13.66C1.62 12.94 1.05 12.0933 0.63 11.12C0.21 10.1467 0 9.10667 0 8C0 6.89333 0.21 5.85333 0.63 4.88C1.05 3.90667 1.62 3.06 2.34 2.34C3.06 1.62 3.90667 1.05 4.88 0.63C5.85333 0.21 6.89333 0 8 0C9.10667 0 10.1467 0.21 11.12 0.63C12.0933 1.05 12.94 1.62 13.66 2.34C14.38 3.06 14.95 3.90667 15.37 4.88C15.79 5.85333 16 6.89333 16 8C16 9.10667 15.79 10.1467 15.37 11.12C14.95 12.0933 14.38 12.94 13.66 13.66C12.94 14.38 12.0933 14.95 11.12 15.37C10.1467 15.79 9.10667 16 8 16ZM8.4 14.8C10.2267 14.6667 11.75 13.96 12.97 12.68C14.19 11.4 14.8 9.84 14.8 8C14.8 6.16 14.19 4.6 12.97 3.32C11.75 2.04 10.2267 1.33333 8.4 1.2V14.8Z"
+            fill="currentColor" />
+        </svg>
+      </button>
+
+      <span class="time">
+        <span class="dot"></span>  IST, TR.<span id="hour"></span>
+      </span>
+    </header>
+
+    <footer class="footer">
+      <p class="mail">
+        Bana merhaba de! <br>
+        <a href="mailto:lewislosa@gmail.com" data-cursor="hover">lewislosa@gmail.com</a>
+      </p>
+      <div class="links">
+        <picture>
+          <source srcset="/perfil-400.jpg" media="(max-width: 400px)">
+          <img src="/perfil.jpg" alt="Thumbnail">
+        </picture>
+        <a href="https://instagram.com/lewislosa" data-number="01" data-cursor="hover" target="_blank">Instagram</a>
+        <a href="https://github.com/lewislosa" data-number="02" data-cursor="hover" target="_blank">Github</a>
+        <a href="https://discord.com/..." data-number="03" data-cursor="hover" target="_blank">Discord</a>
+        <a href="https://bynogame.com/destekle/lewislosa" data-number="04" data-cursor="hover" target="_blank">ByNoGame</a>
+        <a href="https://papara.com/yayinci/destekle/lewislosa" data-number="05" data-cursor="hover" target="_blank">Papara</a>
+      </div>
+      <button class="theme mobile" id="toggleThemeMobile">
+        <svg class="theme-svg" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M8 16C6.89333 16 5.85333 15.79 4.88 15.37C3.90667 14.95 3.06 14.38 2.34 13.66C1.62 12.94 1.05 12.0933 0.63 11.12C0.21 10.1467 0 9.10667 0 8C0 6.89333 0.21 5.85333 0.63 4.88C1.05 3.90667 1.62 3.06 2.34 2.34C3.06 1.62 3.90667 1.05 4.88 0.63C5.85333 0.21 6.89333 0 8 0C9.10667 0 10.1467 0.21 11.12 0.63C12.0933 1.05 12.94 1.62 13.66 2.34C14.38 3.06 14.95 3.90667 15.37 4.88C15.79 5.85333 16 6.89333 16 8C16 9.10667 15.79 10.1467 15.37 11.12C14.95 12.0933 14.38 12.94 13.66 13.66C12.94 14.38 12.0933 14.95 11.12 15.37C10.1467 15.79 9.10667 16 8 16ZM8.4 14.8C10.2267 14.6667 11.75 13.96 12.97 12.68C14.19 11.4 14.8 9.84 14.8 8C14.8 6.16 14.19 4.6 12.97 3.32C11.75 2.04 10.2267 1.33333 8.4 1.2V14.8Z"
+            fill="currentColor" />
+        </svg>
+      </button>
+    </footer>
+
+  <div class="cursor" data-action="false" id="cursor">
+    <div class="pointer"></div>
+  </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
